@@ -10,37 +10,20 @@ namespace StacksAndQueues
     {
         public Node head;
         public Node tail;
-        public void PushToStack(int data)
+        public void Enqueue(int data)
         {
             Node newnode = new Node(data);
-            if (this.head == null)
+            if (head == null)
             {
                 this.head = this.tail = newnode;
             }
             else
             {
-                newnode.next = this.head;
-                this.head = newnode;
+                this.tail.next = newnode;
+                this.tail = newnode;
             }
         }
-        public int Pop()
-        {
-            int data = 0;
-            if (this.head == null)
-            {
-                Console.WriteLine("Linkedlist is empty");
-            }
-            else
-            {
-                data = head.data;
-                this.head = this.head.next;
-            }
-            return data;
-        }
-        public void Peek()
-        {
-            Console.WriteLine("The Top Value in stack is : " + this.head.data + "\n");
-        }
+        
         public void DisplayList()
         {
             int count = 0;
