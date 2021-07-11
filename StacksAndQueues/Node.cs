@@ -9,7 +9,7 @@ namespace StacksAndQueues
     class Node
     {
         public int data;
-        public Node next;
+        public Node next;//It stores Node address
         public Node(int data)
         {
             this.data = data;

@@ -17,9 +17,11 @@ namespace StacksAndQueues
             Console.WriteLine("\t\t\t----------------->WELCOME TO STACK OPERATIONS<----------------\n");
             StackMethods stack = new StackMethods();
             Console.WriteLine("\tStack Contains\n");
+            //pushing values to stack
             stack.PushToStack(70);
             stack.PushToStack(30);
             stack.PushToStack(56);
+            //displaying stack
             stack.DisplayList();
             Console.Read();
         }

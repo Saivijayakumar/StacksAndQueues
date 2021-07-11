@@ -19,9 +19,7 @@ namespace StacksAndQueues
             }
             else
             {
-                //linking newnode to head
                 newnode.next = this.head;
-                //Updating head pointer
                 this.head = newnode;
             }
         }
