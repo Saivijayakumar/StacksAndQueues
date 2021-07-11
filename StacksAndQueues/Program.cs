@@ -21,6 +21,11 @@ namespace StacksAndQueues
             stack.PushToStack(70);
             stack.PushToStack(30);
             stack.PushToStack(56);
+            stack.Peek();
+            Console.WriteLine("\tBefore Pop Method");
+            stack.DisplayList();
+            stack.Pop();
+            Console.WriteLine("\tAfter Pop Method");
             //displaying stack
             stack.DisplayList();
             Console.Read();

@@ -23,6 +23,24 @@ namespace StacksAndQueues
                 this.head = newnode;
             }
         }
+        public int Pop()
+        {
+            int data = 0;
+            if (this.head == null)
+            {
+                Console.WriteLine("Linkedlist is empty");
+            }
+            else
+            {
+                data = head.data;
+                this.head = this.head.next;
+            }
+            return data;
+        }
+        public void Peek()
+        {
+            Console.WriteLine("The Top Value in stack is : " + this.head.data + "\n");
+        }
         public void DisplayList()
         {
             int count = 0;
