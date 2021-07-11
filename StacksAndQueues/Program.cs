@@ -17,7 +17,7 @@ namespace StacksAndQueues
             Console.WriteLine("\t\t\t----------------->WELCOME TO QUEUE OPERATIONS<----------------\n");
             QueueMethods queue = new QueueMethods();
             Console.WriteLine("\tQueue Contains\n");
-            //pushing values to stack
+            //pushing values to queue
             queue.Enqueue(56);
             queue.Enqueue(30);
             queue.Enqueue(70);
