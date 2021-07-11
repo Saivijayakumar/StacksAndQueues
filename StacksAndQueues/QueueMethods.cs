@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StacksAndQueues
 {
-    class StackMethods
+    class QueueMethods
     {
         public Node head;
         public Node tail;
