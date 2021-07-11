@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StacksAndQueues
 {
-    class StackMethods
+    class QueueMethods
     {
         public Node head;
         public Node tail;
@@ -23,7 +23,20 @@ namespace StacksAndQueues
                 this.tail = newnode;
             }
         }
-        
+        public int Dequeue()
+        {
+            int data = 0;
+            if (this.head == null)
+            {
+                Console.WriteLine("Linkedlist is empty");
+            }
+            else
+            {
+                data = head.data;
+                this.head = this.head.next;
+            }
+            return data;
+        }
         public void DisplayList()
         {
             int count = 0;

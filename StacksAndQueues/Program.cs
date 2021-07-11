@@ -15,13 +15,17 @@ namespace StacksAndQueues
         static void Main(string[] args)
         {
             Console.WriteLine("\t\t\t----------------->WELCOME TO QUEUE OPERATIONS<----------------\n");
-            StackMethods stack = new StackMethods();
+            QueueMethods queue = new QueueMethods();
             Console.WriteLine("\tQueue Contains\n");
             //pushing values to stack
-            stack.Enqueue(56);
-            stack.Enqueue(30);
-            stack.Enqueue(70);
-            stack.DisplayList();
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+            Console.WriteLine("\tBefore Dequeue Method");
+            queue.DisplayList();
+            queue.Dequeue();
+            Console.WriteLine("\tAfter Dequeue Method");
+            queue.DisplayList();
             Console.Read();
         }
     }
